@@ -53,6 +53,8 @@ widgets:
       offline_label: ""
       hide_empty_workspaces: false
       hide_if_offline: false
+      populated_label: "\uf111"
+      empty_label: "\uf111"
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
