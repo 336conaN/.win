@@ -18,15 +18,9 @@ bars:
       position: "top"
       center: false
     animation:
-      enabled: true
-      duration: 1000
+      enabled: false
     blur_effect:
       enabled: false
-      acrylic: false
-      dark_mode: false
-      round_corners: false
-      round_corners_type: "normal"
-      border_color: "System"
     window_flags:
       always_on_top: false
       windows_app_bar: false
