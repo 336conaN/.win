@@ -1,0 +1,117 @@
+/*/////////////////////////////////*/
+/*                                 */
+/*  https://github.com/336conaN    */
+/*  https://codeberg.org/336conaN  */
+/*                                 */
+/*/////////////////////////////////*/
+
+:root {
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+}
+
+.yasb-bar {
+  border-radius: 8px;
+  background-color: var(--base);
+  margin: 0px 0px 0px 0px;
+  padding: 2px 2px 2px 2px;
+}
+
+.glazewm-workspaces,
+.systray,
+.active-window-widget,
+.clock-widget,
+.weather-widget,
+.cpu-widget,
+.memory-widget {
+  border-radius: 6px;
+  background-color: var(--mantle);
+  margin: 2px 2px 2px 2px;
+  padding: 0px 4px 0px 4px;
+}
+
+* {
+  font-family: "SFMono Nerd Font Mono";
+  font-weight: normal;
+  font-size: 25px;
+  color: var(--text);
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.icon {
+  margin: 0px 2px 0px 2px;
+  padding: 0px 2px 0px 2px;
+}
+
+.label {
+  font-family: "SF Pro Medium";
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text);
+  margin: 0px 2px 0px 2px;
+  padding: 0px 0px 0px 0px;
+}
+
+.glazewm-workspaces .ws-btn {
+  color: var(--surface0);
+  border: none;
+  margin: 4px 4px 4px 4px;
+  padding: 0px 0px 0px 0px;
+}
+
+.glazewm-workspaces .ws-btn.active {
+  color: var(--blue);
+}
+
+.glazewm-workspaces .ws-btn.populated {
+  color: var(--subtext0);
+}
+
+.systray .button {
+  border-radius: 0px;
+  border: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 2px 0px 2px;
+}
+
+.clock-widget .icon {
+  color: var(--red);
+}
+
+.weather-widget .icon {
+  color: var(--green);
+}
+
+.cpu-widget .icon {
+  color: var(--blue);
+}
+
+.memory-widget .icon {
+  color: var(--yellow);
+}
+

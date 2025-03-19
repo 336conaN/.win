@@ -1,0 +1,148 @@
+#####################################
+##                                 ##
+##  https://github.com/336conaN    ##
+##  https://codeberg.org/336conaN  ##
+##                                 ##
+#####################################
+
+watch_stylesheet: true
+watch_config: true
+debug: false
+hide_taskbar: false
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    animation:
+      enabled: true
+      duration: 1000
+    blur_effect:
+      enabled: false
+      acrylic: false
+      dark_mode: false
+      round_corners: false
+      round_corners_type: "normal"
+      border_color: "System"
+    window_flags:
+      always_on_top: false
+      windows_app_bar: false
+    dimensions:
+      width: "100%"
+      height: 36
+    padding:
+      top: 10
+      bottom: 0
+      left: 10
+      right: 10
+    widgets:
+      left: [
+        "glazewm_workspaces",
+        "systray"
+      ]
+      center: [
+        "active_window"
+      ]
+      right: [
+        "clock",
+        "weather",
+        "cpu",
+        "memory"
+      ]
+widgets:
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: ""
+      hide_empty_workspaces: false
+      hide_if_offline: false
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      label_collapsed: ""
+      label_expanded: ""
+      label_position: "left"
+      pin_click_modifier: "alt"
+      icon_size: 16
+      show_unpinned: true
+      show_unpinned_button: false
+      show_battery: false
+      show_volume: false
+      show_network: false
+  active_window:
+    type: "yasb.active_window.ActiveWindowWidget"
+    options:
+      label: "{win[title]}"
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
+      label_no_window: "desktop"
+      label_icon: false
+      label_icon_size: 16
+      max_length: 100
+      max_length_ellipsis: "..."
+      monitor_exclusive: false
+      animation:
+        enabled: true
+        type: 'fadeInOut'
+        duration: 200
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "<span>\uf017</span> {%H:%M}"
+      label_alt: ""
+      timezones: []
+      tooltip: false
+      animation:
+        enabled: false
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+  weather:
+    type: "yasb.weather.WeatherWidget"
+    options:
+      label: "<span>\uef1d</span> {temp}"
+      label_alt: ""
+      api_key: "--enter api key here--"
+      show_alerts: false
+      update_interval: 600
+      hide_decimal: true
+      units: "metric"
+      location: "--enter location here--"
+      animation:
+        enabled: false
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "<span>\uf2db</span> {info[percent][total]}%"
+      label_alt: ""
+      update_interval: 2000
+      animation:
+        enabled: false
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+  memory:
+    type: "yasb.memory.MemoryWidget"
+    options:
+      label: "<span>\uefc5</span> {virtual_mem_percent}%"
+      label_alt: ""
+      update_interval: 5000
+      animation:
+        enabled: false
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+
