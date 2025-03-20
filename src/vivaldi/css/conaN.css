@@ -1,0 +1,85 @@
+/***********************************/
+/*                                 */
+/*  https://github.com/336conaN    */
+/*  https://codeberg.org/336conaN  */
+/*                                 */
+/***********************************/
+
+* {
+  font-family: "SF Pro" !important;
+  font-weight: 500 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#modal-bg .modal-wrapper {
+  border-radius: 8px !important;
+  box-shadow: 0 0 0 2px var(--colorAccentBg) !important;
+}
+
+#browser:not(.fullscreen) #webpage-stack {
+  border-radius: 6px !important;
+  box-shadow: 0 0 0 8px var(--colorBg) !important;
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+  margin-top: 1px !important;
+  margin-bottom: 8px !important;
+}
+
+button[name="PanelBookmarks"] {
+  color: #f38ba8 !important;
+  stroke: #f38ba8 !important;
+}
+
+button[name="PanelReadingList"] {
+  color: #fab387 !important;
+  stroke: #fab387 !important;
+}
+
+button[name="TilingToggle"] {
+  color: #f9e2af !important;
+  stroke: #f9e2af !important;
+}
+
+button[name="PanelSession"] {
+  color: #a6e3a1 !important;
+  stroke: #a6e3a1 !important;
+}
+
+button[name="Extensions"] {
+  color: #89b4fa !important;
+  stroke: #89b4fa !important;
+}
+
+button[name="PanelDownloads"] {
+  color: #cba6f7 !important;
+  stroke: #cba6f7 !important;
+}
+
+#panels-container.icons:not(:has(.SlideBar)) {
+  border: none !important;
+}
+
+.button-toolbar.workspace-popup.tabbar-workspace-button {
+  box-shadow: none !important;
+}
+
+#header {
+  display: none !important;
+}
+
+.button-toolbar.button-menu .button-toolbar-menu-indicator.disabled {
+  display: none !important;
+}
+
+.StatusInfo {
+  display: none !important;
+}
+
+.button-toolbar.newtab {
+  display: none !important;
+}
+
